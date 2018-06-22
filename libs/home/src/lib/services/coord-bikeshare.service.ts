@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 
 export interface ResponseObject {
-  results?: (CoordBikeshare)[] | null;
+  features?: (CoordBikeshare)[] | null;
   info: Info;
 }
 
@@ -56,29 +56,33 @@ export interface Picture {
 // })
 @Injectable()
 export class CoordBikeshareService  {
-  // public url = 'https://randomuser.me/api/?nat=us&results=100&exc=login,registered&seed=datauser';
-  public baseUrl = 'https://randomuser.me/api/';
+
+  public baseUrl = 'https://api.coord.co/v1/bike/location/';
+
+  //https://api.coord.co/v1/bike/location?access_key=p9H_wRiQaoEoIKQBaJnA1oR77yCBY-6Z-AEku8bgJNk&latitude=33.7490&longitude=-84.3880&radius_km=10
+
   params = new HttpParams()
-    .append('seed', 'sudo')
-    .append('nat', 'us')
-    .append('exc', 'login,registered');
+    .append('access_key', 'p9H_wRiQaoEoIKQBaJnA1oR77yCBY-6Z-AEku8bgJNk')
+    .append('latitude', '33.7490')
+    .append('longitude', '-84.3880')
+    .append('radius_km', '10');
 
   constructor(private httpClient: HttpClient) {
   }
 
   getAll(pageSize : number = 100) {
-    const params = this.params.append('results', ''+ pageSize);
+    const params = this.params.append('features', ''+ pageSize);
     return this.httpClient.get<ResponseObject>(this.baseUrl, { params }).pipe(
-      map((response: ResponseObject) => response.results)
+      map((response: ResponseObject) => response.features)
     )
   }
 
   getById(id: string) {
       const params = this.params
         .append('id', id)
-        .append('results', '1');
+        .append('features', '1');
     return this.httpClient.get<ResponseObject>(this.baseUrl, { params }).pipe(
-      map((response: ResponseObject) => response.results[0])
+      map((response: ResponseObject) => response.features[0])
     )
   }
 }

@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
+import { MomentModule } from 'ngx-moment';
 import { SharedModule } from '@ngx-starter-kit/shared';
+import { AppConfirmModule } from '@ngx-starter-kit/app-confirm';
+import { DraggableModule } from '@ngx-starter-kit/draggable';
+import { NgxPipesModule } from '@ngx-starter-kit/ngx-pipes';
+
 import { ThemePickerModule } from '@ngx-starter-kit/theme-picker';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -18,16 +24,16 @@ import { CoordmapComponent } from './containers/coordmap/coordmap.component';
 import { FeaturesComponent } from './containers/features/features.component';
 
 
-//    DraggableModule,
-//    AppConfirmModule,
-//    NgxPipesModule,
-//    MomentModule,
 
 
 @NgModule({
   imports: [
     SharedModule,
 
+    DraggableModule,
+    AppConfirmModule,
+    NgxPipesModule,
+    MomentModule,
 
     ScrollToTopModule,
     ThemePickerModule,
@@ -55,10 +61,12 @@ import { FeaturesComponent } from './containers/features/features.component';
             data: { animation: 'about' }
           },
 
-          /* temp - okay for BlogComponent, needs to use VehiclesComponent */
+          /* temp - okay for BlogComponent, needs to use VehiclesComponent 
+          Also uncomment below in declarations.
+          */
           {
             path: 'vehicles',
-            component: BlogComponent,
+            component: VehiclesComponent,
             data: { animation: 'vehicles' }
           },
 
@@ -83,9 +91,9 @@ import { FeaturesComponent } from './containers/features/features.component';
     LandingComponent,
     AboutComponent,
     BlogComponent,
-    /*
+    
     VehiclesComponent,
-    */
+    
     CoordmapComponent,
     FeaturesComponent
   ],
