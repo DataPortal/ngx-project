@@ -1,5 +1,8 @@
 # Loren's Notes
 
+Error during template compile of 'SharedModule'
+  Function calls are not supported in decorators but 'FlexLayoutModule' was called.
+  
 SUMO = Awesome
 https://github.com/xmlking/ngx-starter-kit
 https://xmlking.github.io/ngx-starter-kit/home
