@@ -26,7 +26,7 @@ export const defaultMenu: MenuItem[] = [
         link: '/dashboard/grid/crud-table'
       },
       {
-        name: 'Grid List',
+        name: 'Vehicle List',
         icon: 'grid_on',
         link: '/dashboard/grid/grid-list'
       }

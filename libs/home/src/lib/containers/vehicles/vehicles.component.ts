@@ -19,7 +19,7 @@ export class VehiclesComponent implements OnInit, OnDestroy {
   crumbs = List([
     { name: 'Dashboard', link: '/dashboard' },
     { name: 'Grid', link: '/dashboard/grid' },
-    { name: 'Grid List' }
+    { name: 'Vehicle List' }
   ]);
 
   vehiclesDataSource: MatTableDataSource<Partial<CoordBikeshare>>;

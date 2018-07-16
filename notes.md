@@ -1,5 +1,13 @@
 # Loren's Notes
 
+resides at DirectoryBuilder/ngx-project.
+
+
+
+THESE NOTES ARE OLDER THAN ngx-starter-kit
+
+This repo has this error, probably from copying grid (account to vehicles):
+
 Error during template compile of 'SharedModule'
   Function calls are not supported in decorators but 'FlexLayoutModule' was called.
   
