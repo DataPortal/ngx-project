@@ -50,7 +50,8 @@ https://randomuser.me/api/?seed=datauser&nat=us&exc=login,registered&results=100
 
 Replaced sumo, sumo1, sumo2, sumo3 with datauser, datauser1, datauser2, datauser3
 
-Copied accounts-grid-list to home...containers and renamed to vehicles.
+Added coordmap folder
+Copied accounts-grid-list to home/src/lib/containers/vehicles.
 
 Copied blog folder, renamed to coordmap.
 
