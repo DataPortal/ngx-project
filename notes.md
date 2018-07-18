@@ -20,12 +20,12 @@ Error during template compile of 'SharedModule'
 
 
 Frontend shared vehicle text page currently at:
-https://github.com/DataPortal/dataportal.github.io
+https://dataportal.github.io
 
 
-Tried the following, didn't work:
-Changed from 4200 to 4201 in bs-config.json
-ng serve --port 4201
+* Tried the following, didn't work:
+* Changed from 4200 to 4201 in bs-config.json
+* ng serve --port 4201
 
 
 SUMO = Awesome
