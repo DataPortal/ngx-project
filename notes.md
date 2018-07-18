@@ -1,10 +1,10 @@
 # Loren's Notes
 
 
-npm install
-npm audit fix
-npm install -g npm (if suggested)
-npm run start
+- npm install
+- npm audit fix
+- npm install -g npm (if suggested)
+- npm run start
 
 Now view at http://localhost:4200/
 
