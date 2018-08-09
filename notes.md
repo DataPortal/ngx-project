@@ -20,7 +20,7 @@ npx ngh --no-silent --dir dist/apps/webapp
 # Current Project
 
 Frontend coord.co list will reside at (currently works on localhost):  
-https://dataportal.github.io
+https://dataportal.github.io/coord-angular/
 
 SUMO = Awesome  
 https://github.com/xmlking/ngx-starter-kit  
