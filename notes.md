@@ -1,4 +1,4 @@
-# Loren's Notes
+# Angular NGX Notes
 
 
 - npm install
@@ -11,6 +11,14 @@ Now view at http://localhost:4200/
 `npm run deploy:mock` to deploy to gp-pages.
 
 resides at DirectoryBuilder/ngx-project.
+
+npm run deploy:mock is basically two commands (you can see in package.json)  
+npm run build:mock  
+npx ngh --dir dist/apps/webapp  
+
+You can run them separately to isolate any issues.  
+After build, you can add --no-silent for more detailed errors.  
+npx ngh --no-silent --dir dist/apps/webapp
 
 
 This repo has this error, probably from copying grid (account to vehicles):
