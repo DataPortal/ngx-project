@@ -14,7 +14,7 @@ Now view at http://localhost:4200/
 `npx ngh --dir dist/apps/webapp`  
 
 You can run them separately to isolate any issues.  
-After build, you can add --no-silent for more detailed errors.  
+After build, you can add `--no-silent` for more detailed errors.  
 `npx ngh --no-silent --dir dist/apps/webapp`
 
 Replace ngx-starter-kit throughout files with [Your repo name], or retain name ngx-starter-kit.
