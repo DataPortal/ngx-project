@@ -1,6 +1,5 @@
 # Angular NGX Notes
 
-
 - npm install
 - npm audit fix
 - npm install -g npm (if suggested)
@@ -8,9 +7,7 @@
 
 Now view at http://localhost:4200/
 
-`npm run deploy:mock` to deploy to gp-pages.
-
-resides at DirectoryBuilder/ngx-project.
+`npm run deploy:mock` to deploy to gp-pages branch.
 
 npm run deploy:mock is basically two commands (you can see in package.json)  
 npm run build:mock  
@@ -20,32 +17,31 @@ You can run them separately to isolate any issues.
 After build, you can add --no-silent for more detailed errors.  
 npx ngh --no-silent --dir dist/apps/webapp
 
+# Current Project
+
+Frontend coord.co list will reside at (currently works on localhost):  
+https://dataportal.github.io
+
+SUMO = Awesome  
+https://github.com/xmlking/ngx-starter-kit  
+https://xmlking.github.io/ngx-starter-kit/home  
+
+Found at NGXS resources  
+https://ngxs.gitbook.io/ngxs/community/resources
+
+home route:  
+libs/home/src/lib/containers/landing.component.html
+
+
+# Earlier Tests
+
+Initial tests at DirectoryBuilder/ngx-project.
+Works on localhost.
 
 This repo has this error, probably from copying grid (account to vehicles):
 
 Error during template compile of 'SharedModule'
   Function calls are not supported in decorators but 'FlexLayoutModule' was called.
-
-
-Frontend shared vehicle text page currently at:
-https://dataportal.github.io
-
-
-* Tried the following, didn't work:
-* Changed from 4200 to 4201 in bs-config.json
-* ng serve --port 4201
-
-
-SUMO = Awesome
-https://github.com/xmlking/ngx-starter-kit
-https://xmlking.github.io/ngx-starter-kit/home
-
-Found at NGXS resources
-https://ngxs.gitbook.io/ngxs/community/resources
-
-
-home route:
-libs/home/src/lib/containers/landing.component.html
 
 Commented out "Get started" button.
 
