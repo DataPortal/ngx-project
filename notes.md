@@ -9,13 +9,15 @@ Now view at http://localhost:4200/
 
 `npm run deploy:mock` to deploy to gp-pages branch.
 
-npm run deploy:mock is basically two commands (you can see in package.json)  
-npm run build:mock  
-npx ngh --dir dist/apps/webapp  
+`npm run deploy:mock` is basically two commands (you can see in package.json)  
+`npm run build:mock`  
+`npx ngh --dir dist/apps/webapp`  
 
 You can run them separately to isolate any issues.  
 After build, you can add --no-silent for more detailed errors.  
-npx ngh --no-silent --dir dist/apps/webapp
+`npx ngh --no-silent --dir dist/apps/webapp`
+
+Replace ngx-starter-kit throughout files with [Your repo name], or retain name ngx-starter-kit.
 
 # Current Project
 
@@ -31,7 +33,6 @@ https://ngxs.gitbook.io/ngxs/community/resources
 
 home route:  
 libs/home/src/lib/containers/landing.component.html
-
 
 # Earlier Tests
 
