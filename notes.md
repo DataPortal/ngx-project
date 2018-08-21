@@ -21,7 +21,7 @@ Replace ngx-starter-kit throughout files with [Your repo name], or retain name n
 
 # Current Project
 
-Frontend coord.co list will reside at (currently works on localhost):  
+Frontend coord.co list (click Getting Started and login, then Mobility > Available Buildings):  
 https://dataportal.github.io/coord-angular/
 
 SUMO = Awesome  
