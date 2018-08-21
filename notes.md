@@ -83,13 +83,19 @@ https://randomuser.me/api/?seed=datauser&nat=us&exc=login,registered&results=100
 
 Replaced sumo, sumo1, sumo2, sumo3 with datauser, datauser1, datauser2, datauser3
 
-First time,
+First time,  
 Copied accounts-grid-list to home...containers and renamed to vehicles.
 
-Second time, copied "libs/grid" to "libs/gridmap"
+-----
+Second time, forked xmlking/ngx-starter-kit  
+Copied "libs/grid" to "libs/gridmap"  
 Replaced Account with Vehicle, account with vehicle, including in file names.
 
 Copied blog folder, renamed to coordmap.
 
-Commented out SHARE and LIKE on users list sample
+Commented out SHARE and LIKE on users list sample  
 Commented out logo assets/img/logo_text.png and assets/img/logo_text_dark.png
+
+-----
+Do-it-yourself step-by-step instructions to create xmlking/ngx-starter-kit structure from scratch.
+https://github.com/xmlking/ngx-starter-kit/blob/master/PLAYBOOK.md
